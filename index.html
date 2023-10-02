@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Forest  Engine</title>
+    </head>
+    <body>
+        <section>
+            <div class="main">
+                <img src="google.png" >
+            <div class="sbx">
+                <input type="text" name=""id="query"> <button type="button"id="sbn" onclick="Search()">Search</button>
+            </div>
+            </div>
+        </section>
+
+        <script>
+            function Search(){
+                window.location.href="https://www.google.com/search?q="+ document.getElementById("query").value+"&rlz=1CAVNCX_enUS1069US1069&oq=t&aqs=chrome.0.69i59j69i57j35i39j0i67i131i433i650j69i61j69i60l3.1508j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+            }
+            document.addEventListener("keypress",(e)=>{
+                if(e.key==="Enter")
+                Search()
+            })
+        </script>
+    </body>
+</html>
